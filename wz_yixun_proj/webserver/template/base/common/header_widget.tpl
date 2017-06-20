@@ -1,0 +1,2 @@
+<link rel="stylesheet" type="text/css" href="http://st.icson.com/weizhan/desktop/css/channel_weizhan.css?v=20150305" />
+<script type="text/javascript">window.wzDomainBase = '<#$basedomain#>'; window.wzDomainFront = '<#$frontdomain#>';</script>

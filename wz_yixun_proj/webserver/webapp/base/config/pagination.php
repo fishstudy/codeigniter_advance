@@ -1,0 +1,26 @@
+<?php 
+$config['uri_segment'] = 3;
+$config['num_links'] = 2;
+$config['use_page_numbers'] = TRUE;
+$config['page_query_string'] = TRUE;
+$config['full_tag_open'] = '<ul>';
+$config['full_tag_close'] = '</ul>';
+$config['first_link'] = '1';
+$config['first_tag_open'] = '<li>';
+$config['first_tag_close'] = '</li> <li><span class="space">...</span></li>';
+$config['last_link'] = '末页';
+$config['last_tag_open'] = '<li><span class="space">...</span></li><li>';
+$config['last_tag_close'] = '</li>';
+$config['next_link'] = '&gt;';
+$config['next_link'] = '下一页';
+$config['next_tag_open'] = '<li>';
+$config['next_tag_close'] = '</li>';
+$config['prev_link'] = '&lt;';
+$config['prev_link'] ='上一页';
+$config['prev_tag_open'] = '<li>';
+$config['prev_tag_close'] = '</li>';
+$config['cur_tag_open'] = '<li><span class="active">';
+$config['cur_tag_close'] = '</span></li>';
+$config['num_tag_open'] = '<li>';
+$config['num_tag_close'] = '</li>';
+$config['per_page'] = 30;

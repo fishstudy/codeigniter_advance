@@ -1,0 +1,32 @@
+
+--
+-- 表的结构 `articlekind`
+--
+use weidian;
+CREATE TABLE IF NOT EXISTS `articlekind` (
+  `id` int(11) unsigned NOT NULL COMMENT '店铺爆款商品类目',
+  `wzId` int(11) unsigned NOT NULL COMMENT '微店id',
+  `kindName` char(20) NOT NULL COMMENT '类目名称',
+  `createTime` int(11) NOT NULL COMMENT '创建时间',
+  `updateTime` int(11) NOT NULL COMMENT '修改时间'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='文章类目';
+
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `articlekind`
+--
+ALTER TABLE `articlekind`
+  ADD PRIMARY KEY (`id`), ADD KEY `wzId` (`wzId`);
+
+
+
+--修复表
+ALTER TABLE `website` ADD `recommend` VARCHAR(256) CHARACTER SET utf8 COLLATE utf8_general_ci NULL COMMENT '达人推荐理由' ;
+ALTER TABLE `website` ADD `actLogo` VARCHAR(256) CHARACTER SET utf8 COLLATE utf8_general_ci NULL COMMENT '热销活动基本设置-logo' ;
+ALTER TABLE `website` ADD `actPic` VARCHAR(256) CHARACTER SET utf8 COLLATE utf8_general_ci NULL COMMENT '热销活动基本设置-背景图' ;
+ALTER TABLE `website` ADD `actTitle` VARCHAR(256) NULL COMMENT '热销活动基本设置-标题' ;
+ALTER TABLE `website` ADD `actCoupon` TINYINT(2) UNSIGNED NOT NULL DEFAULT '2' COMMENT '热销活动-是否在首页展示优惠券1是2否（默认）' ;
